@@ -1,0 +1,25 @@
+# Dependencies
+/.pnp
+.pnp.js
+
+# Testing
+/coverage
+/cypress/videos
+/cypress/screenshots
+
+# Build output
+/build
+/dist
+/.next
+/out
+
+# Cache and bundler
+.cache/
+.parcel-cache/
+.webpack/
+
+# Generated files
+.eslintcache
+/src/generated
+/src/graphql/schema.json
+*.tsbuildinfo

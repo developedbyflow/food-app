@@ -1,31 +1,30 @@
-# macOS
+# OS Files
 .DS_Store
+Thumbs.db
+*.swp
 
-# Node.js
-node_modules/
-npm-debug.log
-yarn-error.log
-
-# Logs
-logs/
-*.log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-
-# Environment variables
+# Environment files
 .env
+.env.*
+!.env.example
 
 # Editor directories and files
 .idea/
 .vscode/
 *.sublime-project
 *.sublime-workspace
+.project
+.settings/
 
-# System files
-Thumbs.db
-Desktop.ini
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
 
-# Build directories
+# Project specific
+node_modules/
 dist/
 build/
+coverage/
