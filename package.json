@@ -3,14 +3,26 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "dependencies": {},
   "devDependencies": {
     "@commitlint/cli": "^19.8.1",
     "@commitlint/config-conventional": "^19.8.1",
-    "husky": "^9.1.7"
+    "eslint": "^9.27.0",
+    "eslint-config-prettier": "^10.1.5",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.0.0",
+    "prettier": "^3.5.3"
   },
   "scripts": {
-    "prepare": "husky"
+    "prepare": "husky",
+    "format": "prettier --write ."
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "prettier --write"
+    ],
+    "*.{json,md,css,scss,html}": [
+      "prettier --write"
+    ]
   },
   "keywords": [],
   "author": "",

@@ -1,0 +1,14 @@
+# .prettierignore
+node_modules/
+build/
+dist/
+coverage/
+.next/
+.nuxt/
+.cache/
+public/
+*.min.js
+*.min.css
+package-lock.json
+yarn.lock
+.env*

@@ -1,1 +1,8 @@
-npx --no -- commitlint --edit "$1"
+echo 'pattern="^(feat|fix|perf|refactor|test|docs|chore)\([^)]+\)#[A-Z0-9-]+: .+"
+
+if ! grep -qE "$pattern" "$1"; then
+    echo "❌ Wrong format!"
+    echo "Use: action(tech/module)#ticket: message"
+    echo "Example: fix(be/api)#TICKET-123: resolve validation error"
+    exit 1
+fi' > .husky/commit-msg
